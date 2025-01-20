@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html style="color: azure;">
+    <head>
+         <title> Audios Page </title>
+         <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body id="backImage">
+        <h1>Youtube Random Audios</h1>
+        <p>This is page #2</p>
+
+        <p>Baila Mi Cumbia</p>
+        <audio controls loop>
+            <source src="music/Baila Mi Cumbia (Sting) - Jimmy Fontanez_Media Right Productions.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        <p>Construyendo en el Espacio</p>
+        <audio controls>
+            <source src="music/Construyendo en el Espacio - Luna Cantina.mp3">
+        </audio>
+        <br>
+        <p>Fin de la noche</p>
+        <audio controls> 
+            <source src="music/Fin de la Noche - Luna Cantina.mp3">
+        </audio>
+        <br><br>
+
+        <!--java script button-->
+        <p id="greeting">Press Button</p>
+        <button onclick="doSomething()" style="font-size: 25px; background-color: aquamarine; color: chocolate; border-radius: 25px;">MAIN PAGE</button>   
+        <script>
+            function doSomething(){
+                document.getElementById("greeting").innerHTML="THANK YOU";
+            }
+        </script>
+
+    </body>
+</html>

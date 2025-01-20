@@ -1,0 +1,200 @@
+/*External Styling CSS */
+
+body{
+    background-color: antiquewhite;
+}
+
+#head1{
+    color: green;
+    font-family: "Playwrite VN",   verdana, arial;
+    border-style:outset;
+    border-width: 3px;
+    border-color:#7fffd4;
+    border-radius: 5px;
+}
+
+#head2{
+    border: 3px solid #111f99 ;
+    border-radius: 5px;
+    
+}
+
+#head3{
+    text-shadow: 3px 3px 5px blue,-3px -3px 5px rgb(233, 185, 96);
+
+}
+
+#box10{
+    width: 100px;
+    height: 100px;
+    background-color: #7e69c7;
+    box-shadow: 8px 8px 8px #c8ccec;
+}
+
+/*id="" use #*/
+#p1{
+    color: #0000ff;
+    font-family: "Jersey 15", "lucida console", "courier new";
+    font-size: 1.3EM;
+    font-weight: 2P4PXX;
+    font-style: italic;
+    border-bottom: 3px solid red;
+    border-top: 3px solid blueviolet;
+    border-left: 3px dotted orange;
+    border-right: 3px dotted orange
+}
+
+/*class="" use .classname*/
+.odd{
+    color: hsl(276, 73%, 46%);
+}
+
+
+#p5,#head4{
+    margin: 25px;
+}
+
+.boxy{
+    border: 5px solid;
+    font-size: 3em;
+    width: 150px;
+    height:150px;
+}
+#boxy1{
+    background-color: #7fffd4;
+    margin: auto;
+}
+#boxy2{
+    background-color: #7e69c7;
+    margin-left: 50px;
+}
+
+
+#img1{
+    float: left;
+    margin-left: 10px;
+    
+}
+#img2{
+    float: right;
+    margin-left: 10px;
+
+}
+
+#textbox1{
+    border: 3px solid #000000 ;
+    border-radius: 5px;
+}
+
+#overflowdiv{
+    border: 2px solid;
+    height: 50px;
+    overflow: auto;
+}
+
+#divdisplay{
+    background-color:lawngreen ;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+#spandisplay{
+    background-color: rgb(223, 190, 61);
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+
+.container{
+    background-color: grey;
+    height: 100vh;
+}
+
+.box{
+    background-color: white;
+    border: 2px solid;
+    padding: 25px;
+    box-sizing: border-box;
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: center;
+
+    min-height: 50%;
+}
+
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    position: sticky;
+    bottom: 0px;
+}
+#box2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(52, 26, 196);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/*Audios Page*/
+#backImage{
+    background-image: url(Images/backgroundimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#container{
+    border: 2px solid
+}
+#container + p{
+    background-color: yellow;
+}
+
+/* Unvisited links */
+a:link {
+    color: #90dd02; 
+    font-size: 2.0em;
+}
+/* Visited links */
+a:visited {
+    color: rgb(30, 103, 105); 
+}
+/* Links being hovered */
+a:hover{
+    color: brown;
+    font-size: 3.0em;
+}
+/* Links being clicked */
+a:active{
+    color: #0000ff;
+    font-size: 5em;
+}
+
+li:hover{
+    background-color: yellow;
+}
+li:not(:hover){
+    background-color: hsl(0, 0%, 100%);
+}
+li:hover{
+    background-color: yellow;
+}
+
+#hunt p{
+    background-color: rgb(179, 126, 58);
+    padding: 10px;
+    display: none;
+}
+#hunt:hover p {
+    display: block;
+}
+
+h1::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}

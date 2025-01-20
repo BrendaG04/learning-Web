@@ -1,0 +1,225 @@
+<!DOCTYpE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearningCSS</title>
+    <!--Internal Styling
+    <style>
+    
+        body{
+            background-color: antiquewhite;
+        }
+        h1{
+            color: rgb(122, 32, 32);
+        }
+        p{
+            color: rgb(4, 35, 92);
+        }
+
+    </style>
+    -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <h1 id="head1">We Are Learning CSS</h1>
+    <h1 id="head2">Software Engineer</h1>
+    <h1 id="head3">Web Development</h1>
+    <div id="box10"></div>
+    <hr>
+    <br>
+          <!--Inline(manually) vs Internal(within <head>) vs External (separate doc)    -->
+    <p id="p1" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, autem placeat dolorem quidem ad 
+        doloribus minus a. pariatur rerum laboriosam perferendis assumenda veritatis, deserunt dolore incidunt 
+        ad nulla tempora modi.
+    </p>
+    <br>
+    <p id="p2" class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, autem placeat dolorem quidem ad 
+        doloribus minus a. pariatur rerum laboriosam perferendis assumenda veritatis, deserunt dolore incidunt 
+        ad nulla tempora modi.
+    </p>
+    <br>    
+    <p id="p3" class="even">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, autem placeat dolorem quidem ad 
+        doloribus minus a. pariatur rerum laboriosam perferendis assumenda veritatis, deserunt dolore incidunt 
+        ad nulla tempora modi.
+    </p>
+    <br>
+    <p id="p4" class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, autem placeat dolorem quidem ad 
+        doloribus minus a. pariatur rerum laboriosam perferendis assumenda veritatis, deserunt dolore incidunt 
+        ad nulla tempora modi.
+    </p>
+    <hr>
+    <br>
+
+        <!--Margins- space around an element-->
+    <h1 id="head4">Brenda Rivera</h1>
+    <p id="p5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam corporis ut soluta ea, facere sint necessitatibus
+         sapiente modi omnis at qui? Ipsum nisi similique sint quisquam ad minus alias molestias!
+    </p>
+
+    <div class="boxy" id="boxy1">Boxy 1</div>
+    <div class="boxy" id="boxy2">Boxy 2</div>
+    <hr>
+    <br>
+
+        <!--Float = allows other elements to flow around it-->
+    <div id="textbox1">
+        <img src="Images/RobloxLogo.png" height="150px" id="img1">
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, illo quod eaque, veniam repellendus ut impedit, autem porro 
+            debitis dolores molestias distinctio ipsum hic vitae sapiente earum harum aliquid neque.
+        </p>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, illo quod eaque, veniam repellendus ut impedit, autem porro 
+            debitis dolores molestias distinctio ipsum hic vitae sapiente earum harum aliquid neque.
+        </p>
+
+        <img src="Images/Bacon_Hair.webp" height="150px" id="img2">
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, illo quod eaque, veniam repellendus ut impedit, autem porro 
+            debitis dolores molestias distinctio ipsum hic vitae sapiente earum harum aliquid neque.
+        </p>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, illo quod eaque, veniam repellendus ut impedit, autem porro 
+            debitis dolores molestias distinctio ipsum hic vitae sapiente earum harum aliquid neque.
+        </p>
+    </div >
+    <hr>
+    <br>
+
+        <!--Overflow= property that sets the desired behavior when content does not fit in the 
+                    parental element box(overflows)
+                    overflow: visible
+                    overflow: hidden
+                    overflow: clip
+                    overflow: scroll
+                    overflow: auto
+        -->
+    <div id="overflowdiv">
+        <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatum molestias
+             obcaecati dolor eveniet quibusdam tenetur quasi ea sunt facilis assumenda optio, 
+             maiores perspiciatis! Blanditiis quae necessitatibus alias voluptatum id. Lorem ipsum dolor, 
+        </P>
+    </div>
+    <hr>
+    <br>
+
+        <!--Display= property specifies if/how an element is displyed
+            Block-level= start on a new line, take up the full width available(h1,div,p,form,header,footer)
+            Inline= do not start on a new line, width is limited to what is needed(span, a, img)
+        -->
+    <div id="divdisplay">DIV</div>
+    <span id="spandisplay">SPAN</span>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsa veritatis similique, delectus illum 
+    deserunt quo cupiditate maiores rem assumenda officia quas, iste numquam suscipit architecto consequatur 
+    dolores libero placeat?
+    <hr>
+    <br>
+
+        <!--Width & Height-->
+    <div class="container">
+        <div class="box">
+            <h1>This is #1</h1>
+
+        </div>
+        <div class="box">
+            <h1>This is #2</h1>
+
+            </p>
+        </div>
+    </div>
+    <hr>
+    <br>
+
+        <!--Position:
+                relative= positioned relative to where it normally 
+                fixed= positioned relative to the viewport
+                absolute= positioned relative to nearest ancestor
+                sticky= positioned based on scroll position
+                static= default position for an element 
+        -->
+    <div id="box1">   
+        <div id="box2"></div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sapiente reiciendis culpa. Fuga molestias nobis modi. Id non, quo omnis eos vitae totam quis! Suscipit perferendis reprehenderit sit repellendus nostrum!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sapiente reiciendis culpa. Fuga molestias nobis modi. Id non, quo omnis eos vitae totam quis! Suscipit perferendis reprehenderit sit repellendus nostrum!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sapiente reiciendis culpa. Fuga molestias nobis modi. Id non, quo omnis eos vitae totam quis! Suscipit perferendis reprehenderit sit repellendus nostrum!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sapiente reiciendis culpa. Fuga molestias nobis modi. Id non, quo omnis eos vitae totam quis! Suscipit perferendis reprehenderit sit repellendus nostrum!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sapiente reiciendis culpa. Fuga molestias nobis modi. Id non, quo omnis eos vitae totam quis! Suscipit perferendis reprehenderit sit repellendus nostrum!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sapiente reiciendis culpa. Fuga molestias nobis modi. Id non, quo omnis eos vitae totam quis! Suscipit perferendis reprehenderit sit repellendus nostrum!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sapiente reiciendis culpa. Fuga molestias nobis modi. Id non, quo omnis eos vitae totam quis! Suscipit perferendis reprehenderit sit repellendus nostrum!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sapiente reiciendis culpa. Fuga molestias nobis modi. Id non, quo omnis eos vitae totam quis! Suscipit perferendis reprehenderit sit repellendus nostrum!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sapiente reiciendis culpa. Fuga molestias nobis modi. Id non, quo omnis eos vitae totam quis! Suscipit perferendis reprehenderit sit repellendus nostrum!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sapiente reiciendis culpa. Fuga molestias nobis modi. Id non, quo omnis eos vitae totam quis! Suscipit perferendis reprehenderit sit repellendus nostrum!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sapiente reiciendis culpa. Fuga molestias nobis modi. Id non, quo omnis eos vitae totam quis! Suscipit perferendis reprehenderit sit repellendus nostrum!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sapiente reiciendis culpa. Fuga molestias nobis modi. Id non, quo omnis eos vitae totam quis! Suscipit perferendis reprehenderit sit repellendus nostrum!</p>
+    <hr>
+    <br>
+
+        <!--Background Image-
+            Look in Audios Page
+        -->
+    
+        <!--Combinators= explains the relationship between listed selectors
+                ( ) = descendant
+                (>) = child
+                (~) = general sibling
+                (+) = adjacent sibling
+
+                selector > selector   div > p
+        -->
+    <div id="container">   
+        <p>This is #1</p>
+        <p>This is #2</p>
+        <div>
+            <p>This is #3</p>
+        </div>
+    </div>
+
+    <p>This is #4</p>
+    <p>This is #5</p>
+    <hr>
+    <br>
+
+        <!--Pseudo classes/order matters-->
+    <a href="https://Google.com"
+    target="_blank">Google</a>
+    <ul> 
+        <li>This is #1</li>
+        <li>This is #2</li>
+        <li>This is #3</li>
+        <li>This is #4</li>
+        <li>This is #5</li>
+        <li>This is #6</li>
+        <li>This is #7</li>
+        <li>This is #8</li>
+        <li>This is #9</li>
+    </ul>
+    <div id="hunt">HOVER here
+        <p>found me!</p>
+    </div>
+    <hr>
+    <br>
+
+        <!--Pseudo elemetnts= keyword added after a selector 
+                thats used to style a specific parts of an element 
+                
+                selector::pseudoo-element       h1::first-letter{}
+        -->
+    <h1 id="h1.0">Hello</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea consectetur necessitatibus 
+        nobis obcaecati, a perspiciatis ipsam facere, distinctio ex quibusdam consequatur 
+        pariatur delectus cumque voluptatum dignissimos itaque nihil minima possimus.
+    </p>
+    <ul id="fruit">
+        <li id="apple">Apple</li>
+        <li id="Strawberry">Stawberry</li>
+        <li id="Banana">Banana</li>
+
+    </ul>
+
+
+
+</body>
+</html>

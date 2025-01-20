@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <!--Favicon & website title-->
+        <link rel="icon" type="image/jpg" href="images/DTMF album.jpg">
+        <title> Form Web </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--CREATING A FORM-->
+        <form action="Thankyou.html" method="post" enctype="multipart/form-data" onsubmit="handleSubmit(event)">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Spongebob"  minlength="6" maxlength="15" required>
+            <br>    
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="1234" minlength="4" maxlength="4" required>
+            <br>
+
+            <label for="Email">Email:</label>
+            <input type="email" id="email address" placeholder="johnsmith@gmail.com" >
+            <br>    
+
+            <label for="phone">PhoneNumber:</label>
+            <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" >
+            <br>
+
+            <label for="bday">Birthdate:</label>
+            <input type="date" id="bday"  >
+            <br>
+
+            <label for="Quantity">Quantity:</label>
+            <input type="number" id="Quantity" min="0" max="99" > 
+            <br>
+
+            <label for="title">Title:</label>
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." value="Mr." name="title">
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." value="Mrs." name="title">
+            <label for="PhD.">Phd.</label>
+            <input type="radio" id="PhD." value="PhD." name="title">
+            <br>
+
+            <label for="payment">Payment:</label>
+            <select id="Payment" required>
+                <option value="VISA">VISA</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="AmericanExpress">Amex</option>
+            </select>
+            <br>
+
+            <label for="subscribe">Subscribe:</label>
+            <input type="checkbox" id="subscribe"> 
+            <br>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" rows="3" cols="25" ></textarea>
+
+            <label for="file">File:</label>
+            <input type="file" id="file" accept="image/png, image/jpeg" >
+            <br>
+
+            <br>
+            <input type="reset"> 
+
+            <br>
+            <input type="submit" value="Submit">
+                  <!--java script button-->
+            <p id="ThankYouMessage" style="color: green; font-weight: bold;"></p>
+            <script>
+                function handleSubmit(event){
+                    event.preventDefault();
+                    document.getElementById("ThankYouMessage").innerText="THANK YOU FOR SUBMITTING THE FORM!";
+                }
+            </script>
+
+        </form>
+
+    </body>
+
+
+
+
+</html>
