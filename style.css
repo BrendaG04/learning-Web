@@ -147,6 +147,10 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+.audiopage .pagination a{
+    background-color: antiquewhite;
+}
+
 
 #container{
     border: 2px solid
@@ -158,7 +162,7 @@ body{
 /* Unvisited links */
 a:link {
     color: #90dd02; 
-    font-size: 2.0em;
+    font-size: 1.0em;
 }
 /* Visited links */
 a:visited {
@@ -167,24 +171,24 @@ a:visited {
 /* Links being hovered */
 a:hover{
     color: brown;
-    font-size: 3.0em;
+    font-size: 1.2em;
 }
 /* Links being clicked */
 a:active{
     color: #0000ff;
-    font-size: 5em;
+    font-size: 1.0em;
 }
 
-li:hover{
+
+.listcolor:hover{
     background-color: yellow;
 }
-li:not(:hover){
+.listcolor:not(:hover){
     background-color: hsl(0, 0%, 100%);
 }
-li:hover{
+.listcolor:hover{
     background-color: yellow;
 }
-
 #hunt p{
     background-color: rgb(179, 126, 58);
     padding: 10px;
@@ -194,7 +198,372 @@ li:hover{
     display: block;
 }
 
-h100::first-letter{
+
+#firstH::first-letter{
     font-size: 2em;
     font-style: italic;
+}
+#firstP::first-line{
+    background-color: yellow;
+}
+#firstP::selection{
+    color: #ffffff;
+    background-color: #5a850b;
+}
+
+#fruit li{
+    background-color: #ffffff;
+}
+#fruit li::before{
+    content: "✔️";
+}
+#apple::after{
+    content: "🍎";
+}
+#Strawberry::after{
+    content: "🍓";
+}
+#Banana::after{
+    content: "🍍";
+}
+#fruit li::marker{
+    content:":P";
+    color:#5a850b;
+    font-size: 1.0em;
+}
+
+.pagination{
+    text-align: center;
+}
+.pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+/*within the pagination class within the <a> tag find a class that is active*/
+.pagination a.active{
+    background-color: hsl(120, 100%, 70%);
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #000000;
+}
+/*within the pagination class with the <a> tag are hovered over but are not active will be highlighted*/
+.pagination a:hover:not(.active){
+    background-color: grey;
+    border-radius: 5px;
+}
+
+
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    background-color:rgb(32, 119, 119);
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 10px;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: rgb(32, 119, 119);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.897);
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: rgb(103, 179, 182);
+}
+.dropdown a:hover{
+    background-color: rgb(103, 179, 182);
+}
+
+
+/*header*/
+#homeheader{
+    text-align: center;
+}
+
+
+/*Nav Bar*/
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(192, 81%, 51%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: rgb(94, 48, 48);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color:  hsla(81, 60%, 43%, 0.705);
+}
+.navbar li{
+    float: left;
+}
+
+
+
+/*when width is calculated and consider padding, we line up the boxes*/
+*{
+    box-sizing: border-box;
+}
+/*header*/
+.productbody{
+    margin: 0px;
+}
+.productheader {
+    background-color: grey;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    text-align: center;
+    padding: 25px;
+}
+
+
+/*main*/
+aside{
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+section{
+    width: 40%;
+    float: left;
+    padding: 10px;
+
+}
+article{
+    width: 40%;
+    float: left;
+    padding: 10px;
+
+}
+
+/*Footer*/
+.productfooter {
+    display: block;
+    clear: both;
+    background-color: grey;
+    text-align: center;
+    padding: 25px;
+}
+
+/*Mobile Phone//when screen width is less than or equal to 600px*/
+@media screen and (max-width:600px) {
+    aside,section, article{
+        width: 100%;
+    }
+}
+
+
+/*Gallery Image Styling*/
+.gallery{
+    display: inline-block;
+    border: 1px solid rgb(196, 14, 14);
+    margin: 5px;
+    width: 200px;
+}
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+}
+.gallery:hover{
+    border: 3px solid rgb(196, 14, 14);
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/*Icons*/
+.icons{
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+.fa-solid.fa-house.fa-5x{
+    color: grey;
+}
+.fa-brands.fa-instagram.fa-5x{
+    color: pink;
+}
+.fa-brands.fa-snapchat.fa-5x{
+    color: yellow;
+}
+.fa-brands.fa-tiktok.fa-5x {
+    color: rgb(0, 0, 0);
+}
+.fa-solid.fa-house.fa-5x:hover{
+    color: rgb(80, 78, 78);
+}
+.fa-brands.fa-instagram.fa-5x:hover{
+    color: rgb(230, 168, 179);
+}
+.fa-brands.fa-snapchat.fa-5x:hover{
+    color: rgb(185, 185, 4);
+}
+.fa-brands.fa-tiktok.fa-5x:hover{
+    color: rgb(95, 95, 95);
+}
+
+
+
+/*CSS flexbox in ContactUs page*/
+.containerCU{
+    display: flex;
+    border: 10px solid black;
+    height: 90vh;
+    /*flex-direction: row-reverse;
+      justify-content: space-around;  x axis
+      align-items: baseline; y-axis
+      flex-wrap: wrap;
+      align-content: flex-start;
+      column-gap: 1em;
+      row-gap: 1em;
+    */
+}
+.boxContactUs{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+#boxCU1{
+    background-color: #0e0edb;
+}
+#boxCU2{
+    background-color: #31a819;
+}
+#boxCU3{
+    background-color: #e42c2c;
+}
+#boxCU4{
+    background-color: #fffb00;
+}
+
+
+
+    /*Transformations*/
+.boxProduct{
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center;
+
+    transform: translateX(100px) rotateZ(45deg) scaleY(0.5);
+}
+#boxProduct1{
+    background-color: #31a819;
+    /*transform: translate(200px, 200PX);*/
+    /*transform: rotateZ(135deg); */
+    /*transform: scale(2, 2);  */
+    /*transform: skewX(135deg); */
+    /*transform: translateX(100%) rotateZ(90deg) scale(1.0);*/
+}
+#boxProduct2{
+    background-color: #a84219;
+
+}
+#boxProduct3{
+    background-color: #3e3cc7;
+
+}
+
+
+
+
+    /*--Animations Properties in AboutUs page*/
+#boxAU{
+    width: 250px;
+    height: 250px;
+    font-size: 13em;
+    text-align: center;
+    background-color: #7fffd4;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(0.16, 1.06, 1, 1.22);
+}
+/*
+#boxAU:active{
+    animation-name: glow;
+    animation-duration: 2s;
+}
+*/
+@keyframes slideLeft{
+    from {
+        transform: translateX(200%);
+    }
+}
+@keyframes slideRight{
+    to {
+        transform: translateX(200%);
+    }
+}
+@keyframes slideUp{
+    from {
+        transform: translateY(200%);
+    }
+}
+@keyframes slideDown{
+    to {
+        transform: translateY(200%);
+    }
+}
+@keyframes rotate{
+    25% {
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes grow {
+    50%{
+        transform: scale(2, 2);
+    }
+}
+@keyframes shrink{
+    50%{
+        transform: scale(0.5, 0.5) ;
+    }
+}
+@keyframes fade {
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes colorChange {
+    0%{background-color: #7fffd4;}
+    20%{background-color: #c79730;}
+    40%{background-color: #9b7fff;}
+    60%{background-color: #461414;}
+    80%{background-color: #c5df89;}
+    100%{background-color: #5fa0d1;}
+
+}
+@keyframes glow {
+    50%{
+        box-shadow: 0px 0px 50px yellow;
+    }
 }
